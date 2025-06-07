@@ -1,11 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { Alarm } from './src/components/Alarm';
 
 export default function App() {
+  const handleAlarmSet = (time: Date) => {
+    console.log('Alarm set for:', time);
+    // TODO: Implement actual alarm functionality
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>alarmy-clone</Text>
-      <StatusBar style="auto" />
+      <Alarm onAlarmSet={handleAlarmSet} />
+      <StatusBar style="light" />
     </View>
   );
 }

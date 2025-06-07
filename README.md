@@ -138,8 +138,20 @@ npx expo start
 
 ## 🔄 Current Status
 
-**Active Branch**: `dev`  
-**Next Feature**: Alarm Functionality
+**Active Branch**: `feature/alarm`  
+**Current Feature**: Alarm UI Implementation
+**Status**: Basic UI complete, pending alarm functionality
+
+### Completed:
+- Basic alarm UI with time selection
+- iOS-style time picker integration
+- Alarm state management
+
+### Pending:
+- Alarm trigger functionality
+- Sound notifications
+- Background task handling
+- Persistent storage
 
 ## 📁 Current Project Structure
 
@@ -155,5 +167,8 @@ alarmy-clone/
 ├── tsconfig.json        # TypeScript configuration
 ├── assets/              # Images, fonts, etc.
 ├── .gitignore           # Git ignore rules
+├── src/                 # Source directory
+│   └── components/      # React components
+│       └── Alarm.tsx    # Alarm component
 └── LICENSE              # Project license
 ```
