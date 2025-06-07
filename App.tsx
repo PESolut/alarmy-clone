@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text style={styles.title}>alarmy-clone</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +13,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  title: {
+    color: 'white',
+    fontSize: 24,
+    position: 'absolute',
+    top: 50
+  }
 });
+
